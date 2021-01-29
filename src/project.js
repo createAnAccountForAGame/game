@@ -3697,7 +3697,6 @@ console.log('12')
                         r.default.Despawn("shell", e)
                     }))), e.runAction(cc.repeatForever(cc.rotateBy(3, 1080)))
                 }, t.prototype.onCollisionEnter = function(e, t) {
-                    alert("123")
                     "shell" == e.node.group && 2 == e.node.getComponent("shellData").shellLife ? e.node.getComponent("shellData").shellLife -= 1 : "shell" == e.node.group && 1 == e.node.getComponent("shellData").shellLife && (u.default.Instance.Play(2, !1, 1), t.node.active = !1, s.default.Instance.cannonNodeArr[this.cannonNumber] = 0, this.createCannonSui(t.node), e.node.stopAllActions(), i.default.score += 10, l.default.Instance.SetScoreTween(i.default.score), r.default.Despawn("shell", e.node), r.default.Despawn("peaCannon", t.node))
                 }, t.prototype.onCollisionStay = function(e, t) {}, t.prototype.onCollisionExit = function(e, t) {}, t.prototype.createCannonSui = function(e) {
                     var t = cc.instantiate(this.peaSuiPre);
