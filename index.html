@@ -98,7 +98,7 @@
         }
     }
 
-    /* layer.open({
+/*     layer.open({
        type: 1
        , title: false //不显示标题栏
        , closeBtn: false
@@ -110,14 +110,24 @@
        , btnAlign: 'c'
        , shadeClose: true //开启遮罩关闭
        , moveType: 1 //拖拽模式，0或者1
-       , content:
-          `<div style="padding: 10px;text-align:center; line-height: 5px; background-color: #99cccc; color: #fff;">
-             <h4>合成系列</h4>
-             <button onclick="window.location.href='https://synthetic-smart-pig.vercel.app/'">合成聪明蛋</button><br>
-           </div>`,
+       , content:'<img src="https://wx3.sinaimg.cn/mw690/005TGEyHly1gnisikqkcyj30u00u07ch.jpg" width="100%">',
+          // `<div style="padding: 10px;text-align:center; line-height: 5px; background-color: #99cccc; color: #fff;">
+          //    <h4>合成系列</h4>
+          //    <button onclick="window.location.href='https://synthetic-smart-pig.vercel.app/'">合成聪明蛋</button><br>
+          //  </div>`
        success: function (layero) {
        }
      });*/
+
+    layer.open({
+        type: 1,
+        title: false,
+        closeBtn: 0,
+        area: '300px;',
+        skin: 'layui-layer-nobg', //没有背景色
+        shadeClose: true,
+        content: '<img src="https://wx3.sinaimg.cn/mw690/005TGEyHly1gnisikqkcyj30u00u07ch.jpg" width="100%">'
+    });
 
     var loadintT = document.getElementById("loadingText");
     var loadintGif = document.getElementById("loadingImg")
